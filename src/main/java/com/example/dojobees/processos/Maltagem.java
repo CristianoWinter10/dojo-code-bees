@@ -14,7 +14,7 @@ public class Maltagem<Grao> {
 
     private final int DIAS_MAXIMO_PARA_TORRAGEM_TRADICIONAL = 3;
 
-    public Malte Processar() {
+    public Malte processar() {
         Malte malte = macerarEGerminar();
         secarTorrar(malte );
         return malte;
