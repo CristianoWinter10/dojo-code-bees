@@ -4,19 +4,19 @@ import com.example.dojobees.modelos.Aroma;
 import com.example.dojobees.modelos.Coloracao;
 import com.example.dojobees.modelos.Malte;
 
-public class Maltagem<Grao> {
-    /**
-     * Tipo de grao.
-     */
-    protected Grao tipoDeGrao;
+public class Maltagem {
 
     private int diasDeProcesso;
 
     private final int DIAS_MAXIMO_PARA_TORRAGEM_TRADICIONAL = 3;
 
+    public Maltagem(int diasDeProcesso) {
+        this.diasDeProcesso = diasDeProcesso;
+    }
+
     public Malte processar() {
         Malte malte = macerarEGerminar();
-        secarTorrar(malte );
+        secarTorrar(malte);
         return malte;
     }
 
@@ -38,9 +38,5 @@ public class Maltagem<Grao> {
 
     public int getDiasDeProcesso() {
         return diasDeProcesso;
-    }
-
-    public void setDiasDeProcesso(int diasDeProcesso) {
-        this.diasDeProcesso = diasDeProcesso;
     }
 }

@@ -12,12 +12,11 @@ public class Mostura {
         return new Mosto(malte);
     }
 
-    
     private void triturar(Malte malte) {
-        
+        malte.setTriturado(true);
     }
 
     private void cozinhar(Malte malte) {
-
+        malte.setCozido(true);
     }
 }

@@ -9,13 +9,11 @@ public class SepararTrub {
         this.mosto = mosto;
     }
 
-    private void processar() {
+    public void processar() {
         sedimentar();
     }
 
     private void sedimentar() {
-
+        this.mosto.setSedimentado(true);
     }
-
-
 }

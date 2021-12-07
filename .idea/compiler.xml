@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="DojoBees" />
+        <module name="dojo-code-bees" />
       </profile>
     </annotationProcessing>
   </component>

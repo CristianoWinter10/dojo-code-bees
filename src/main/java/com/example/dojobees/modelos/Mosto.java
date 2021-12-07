@@ -3,6 +3,7 @@ package com.example.dojobees.modelos;
 public class Mosto {
 
     private boolean filtrado = false;
+    private boolean sedimentado = false;
 
     private Malte malte;
 
@@ -24,5 +25,13 @@ public class Mosto {
 
     public void setFiltrado(boolean filtrado) {
         this.filtrado = filtrado;
+    }
+
+     public boolean isSedimentado() {
+        return this.sedimentado;
+    }
+
+    public void setSedimentado(boolean sedimentado) {
+        this.sedimentado = sedimentado;
     }
 }
